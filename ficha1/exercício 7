@@ -1,0 +1,15 @@
+// custo do artista para pintar N cubos exercicio 7 ficha 1
+
+void main()
+{
+    float custo=0,custo_por_cubo=0,area_da_lata=0,tinta_gasta_por_cubo=0;
+    int num=0,area=0;
+    printf("indique o numero de cubos\n");
+    scanf("%d",&num);
+    area= (2*2*6);
+    area_da_lata=5*1.5;
+    tinta_gasta_por_cubo= (area*1.5)/area_da_lata;
+    custo_por_cubo= (tinta_gasta_por_cubo*2.75)/1.5;
+    custo= num*custo_por_cubo;
+    printf("o custo total e = %.1f euros\n",custo);
+}
